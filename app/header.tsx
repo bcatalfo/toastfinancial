@@ -1,4 +1,5 @@
 import PrimaryHeader from "./primary-header";
+import SecondaryHeader from "./secondary-header";
 
 export default function Header() {
   return (
@@ -6,6 +7,7 @@ export default function Header() {
       <nav>
         Hello this is a header
         <PrimaryHeader />
+        <SecondaryHeader />
       </nav>
     </>
   );
