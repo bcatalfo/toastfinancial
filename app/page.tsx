@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Welcome to Toast Financial!</h1>;
+  return (
+    <>
+      <h1>Welcome to Toast Financial!</h1>
+    </>
+  );
 }
