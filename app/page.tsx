@@ -4,7 +4,9 @@ export default function Page() {
   return (
     <>
       <Header />
-      <h1>Welcome to Toast Financial!</h1>
+      <h1 className="font-bold underline text-3xl">
+        Welcome to Toast Financial!
+      </h1>
     </>
   );
 }
