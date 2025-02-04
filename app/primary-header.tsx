@@ -1,6 +1,6 @@
 export default function PrimaryHeader() {
   return (
-    <div>
+    <div className="h-[82px]">
       This is a primary header
       <ul>
         <li>Personal</li>
