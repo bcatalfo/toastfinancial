@@ -1,6 +1,6 @@
 export default function PrimaryHeader() {
   return (
-    <div className="h-[64px] px-[80px]">
+    <div className="h-[64px] px-[80px] w-full">
       This is a primary header
       <ul className="flex gap-x-[72px]">
         <li>Personal</li>
