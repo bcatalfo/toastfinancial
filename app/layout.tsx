@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import "./global.css";
 import { Poppins } from "next/font/google";
 
@@ -13,7 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html
+      lang="en"
+      className={classNames(poppins.className, "text-[14px]", "leading-[21px]")}
+    >
       <body>{children}</body>
     </html>
   );
