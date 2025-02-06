@@ -13,6 +13,7 @@ export default function Dropdown({
   const [hidden, setHidden] = useState(true);
   return (
     <li
+      className="h-[28px] relative flex items-center"
       onMouseEnter={(e) => setHidden(false)}
       onMouseLeave={(e) => setHidden(true)}
     >
