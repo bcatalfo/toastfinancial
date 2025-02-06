@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../public/Bread Logo.svg";
+import Dropdown from "./dropdown";
 
 export default function PrimaryHeader() {
   return (
@@ -27,14 +28,7 @@ export default function PrimaryHeader() {
         <ul className="flex items-center gap-[36px]">
           <li>
             <a>Help & Resources</a>
-            <ul className="hidden">
-              <li>
-                <a>Help Center</a>
-              </li>
-              <li>
-                <a>Financial Education</a>
-              </li>
-            </ul>
+            <Dropdown />
           </li>
           <li>
             <a>About Us</a>
