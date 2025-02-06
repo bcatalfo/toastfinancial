@@ -1,3 +1,8 @@
+"use client";
+
+import classNames from "classnames";
+import { useState } from "react";
+
 export default function Dropdown({
   name,
   items,
@@ -5,12 +10,16 @@ export default function Dropdown({
   name: string;
   items: string[];
 }) {
+  const [hidden, setHidden] = useState(true);
   return (
-    <li>
+    <li
+      onMouseEnter={(e) => setHidden(false)}
+      onMouseLeave={(e) => setHidden(true)}
+    >
       <a>{name}</a>
-      <ul className="hidden">
-        {items.map((item) => (
-          <li>
+      <ul className={classNames({ hidden: hidden })}>
+        {items.map((item, index) => (
+          <li key={index}>
             <a>{item}</a>
           </li>
         ))}
