@@ -27,6 +27,14 @@ export default function PrimaryHeader() {
         <ul className="flex items-center gap-[36px]">
           <li>
             <a>Help & Resources</a>
+            <ul>
+              <li>
+                <a>Help Center</a>
+              </li>
+              <li>
+                <a>Financial Education</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a>About Us</a>
