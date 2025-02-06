@@ -30,9 +30,16 @@ export default function PrimaryHeader() {
             name="Help & Resources"
             items={["Help Center", "Financial Education"]}
           />
-          <li>
-            <a>About Us</a>
-          </li>
+          <Dropdown
+            name="About Us"
+            items={[
+              "About Toast Financial",
+              "Careers",
+              "News & Insights",
+              "Sustainability",
+              "Investors",
+            ]}
+          />
         </ul>
       </div>
     </div>
