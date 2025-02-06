@@ -7,7 +7,9 @@ export default function PrimaryHeader() {
             personal
           </a>
         </li>
-        <li>business</li>
+        <li>
+          <a>business</a>
+        </li>
       </ul>
     </div>
   );
