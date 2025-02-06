@@ -17,7 +17,9 @@ export default function Dropdown({
       onMouseEnter={(e) => setHidden(false)}
       onMouseLeave={(e) => setHidden(true)}
     >
-      <a>{name}</a>
+      <a className="block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]">
+        {name}
+      </a>
       <ul className={classNames({ hidden: hidden })}>
         {items.map((item, index) => (
           <li key={index}>
