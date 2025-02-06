@@ -26,10 +26,10 @@ export default function PrimaryHeader() {
       </div>
       <div>
         <ul className="flex items-center gap-[36px]">
-          <li>
-            <a>Help & Resources</a>
-            <Dropdown items={["Help Center", "Financial Education"]} />
-          </li>
+          <Dropdown
+            name="Help & Resources"
+            items={["Help Center", "Financial Education"]}
+          />
           <li>
             <a>About Us</a>
           </li>
