@@ -1,3 +1,6 @@
+import Image from "next/image";
+import logo from "../public/Bread Logo.svg";
+
 export default function PrimaryHeader() {
   return (
     <div className="h-[64px] px-[80px] w-full flex bg-[#13294b] text-white items-center justify-between">
@@ -16,7 +19,9 @@ export default function PrimaryHeader() {
         </ul>
       </div>
       <div>
-        <a>Picture goes here</a>
+        <a>
+          <Image src={logo} alt="Logo image" />
+        </a>
       </div>
       <div>
         <ul className="flex items-center gap-[36px]">
