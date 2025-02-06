@@ -28,7 +28,7 @@ export default function PrimaryHeader() {
         <ul className="flex items-center gap-[36px]">
           <li>
             <a>Help & Resources</a>
-            <Dropdown />
+            <Dropdown items={["Help Center", "Financial Education"]} />
           </li>
           <li>
             <a>About Us</a>

@@ -1,12 +1,11 @@
-export default function Dropdown() {
+export default function Dropdown({ items }: { items: string[] }) {
   return (
     <ul className="hidden">
-      <li>
-        <a>Help Center</a>
-      </li>
-      <li>
-        <a>Financial Education</a>
-      </li>
+      {items.map((item) => (
+        <li>
+          <a>{item}</a>
+        </li>
+      ))}
     </ul>
   );
 }
