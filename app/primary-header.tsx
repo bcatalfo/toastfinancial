@@ -8,7 +8,7 @@ export default function PrimaryHeader() {
           </a>
         </li>
         <li>
-          <a className="uppercase">business</a>
+          <a className="tracking-[1px] uppercase">business</a>
         </li>
       </ul>
     </div>
