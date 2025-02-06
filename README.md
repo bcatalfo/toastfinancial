@@ -8,6 +8,5 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 
 - Header
 - - Primary Header
-- - - Mouse hover effects
 - - - Dropdowns for help and resources and about us
 - - - Switch to business version when you click on business
