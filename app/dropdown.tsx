@@ -14,8 +14,8 @@ export default function Dropdown({
   return (
     <li
       className="h-[28px] relative flex items-center"
-      onMouseEnter={(e) => setHidden(false)}
-      onMouseLeave={(e) => setHidden(true)}
+      onMouseEnter={(_) => setHidden(false)}
+      onMouseLeave={(_) => setHidden(true)}
     >
       <a className="block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]">
         {name}
