@@ -14,3 +14,4 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - - - - Animate the arrow when you hover over the dropdown
 - - - - Make the dropdown look nicer with CSS
 - - - Switch to business version when you click on business
+- Deploy to toastfinancial.com
