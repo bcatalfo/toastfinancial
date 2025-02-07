@@ -17,7 +17,12 @@ export default function Dropdown({
       onMouseEnter={(_) => setDropdownOpen(true)}
       onMouseLeave={(_) => setDropdownOpen(false)}
     >
-      <a className="block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]">
+      <a
+        className={classNames(
+          { "text-[rgb(177,228,227)]": isDropdownOpen },
+          "block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]"
+        )}
+      >
         {name}
       </a>
       <ul
