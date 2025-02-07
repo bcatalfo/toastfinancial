@@ -34,7 +34,8 @@ export default function Dropdown({
           "w-[197.7px]",
           "bg-white",
           "rounded-[8px]",
-          "p-[7px]"
+          "p-[7px]",
+          "shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
         )}
       >
         {items.map((item, index) => (
