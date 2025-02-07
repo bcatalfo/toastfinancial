@@ -11,6 +11,7 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - - Make logo say toast financial instead of bread financial
 - - - Dropdowns for help and resources and about us
 - - - - Add the arrow svg
+- - - - - Animate the arrow when you hover over the dropdown
 - - - - Make the dropdown look nicer with CSS
 - - - - Add hover effects (CSS or JS?)
 - - - - - Make the Help & Resources text color change to blue when the dropdown is visible
