@@ -16,9 +16,15 @@ export default function DropdownItem({
       onMouseLeave={(_) => setIsActive(false)}
     >
       <a
-        className={classNames("text-[#13294b]", "block", {
-          "bg-[rgb(177,228,227)]": isActive,
-        })}
+        className={classNames(
+          "text-[#13294b]",
+          "block",
+          "text-[14px]",
+          "font-medium",
+          {
+            "bg-[rgb(177,228,227)]": isActive,
+          }
+        )}
       >
         {item}
       </a>
