@@ -10,19 +10,19 @@ export default function Dropdown({
   name: string;
   items: string[];
 }) {
-  const [hidden, setHidden] = useState(true);
+  const [isDropdownOpen, setDropdownOpen] = useState(true);
   return (
     <li
       className="h-[28px] relative flex items-center"
-      onMouseEnter={(_) => setHidden(false)}
-      onMouseLeave={(_) => setHidden(true)}
+      onMouseEnter={(_) => setDropdownOpen(false)}
+      onMouseLeave={(_) => setDropdownOpen(true)}
     >
       <a className="block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]">
         {name}
       </a>
       <ul
         className={classNames(
-          { hidden: hidden },
+          { hidden: isDropdownOpen },
           "absolute",
           "right-0",
           "top-[27.5px]",
