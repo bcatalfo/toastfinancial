@@ -31,7 +31,10 @@ export default function Dropdown({
           "absolute",
           "right-0",
           "top-[27.5px]",
-          "w-[197.7px]"
+          "w-[197.7px]",
+          "bg-white",
+          "rounded-[8px]",
+          "p-[7px]"
         )}
       >
         {items.map((item, index) => (
