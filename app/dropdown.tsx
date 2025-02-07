@@ -2,6 +2,7 @@
 
 import classNames from "classnames";
 import { useState } from "react";
+import DropdownItem from "./dropdown-item";
 
 export default function Dropdown({
   name,
@@ -39,9 +40,7 @@ export default function Dropdown({
         )}
       >
         {items.map((item, index) => (
-          <li key={index}>
-            <a className="text-[#13294b]">{item}</a>
-          </li>
+          <DropdownItem index={index} item={item} />
         ))}
       </ul>
     </li>
