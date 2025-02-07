@@ -11,7 +11,7 @@ export default function DropdownItem({
   const [isActive, setIsActive] = useState(false);
   return (
     <li
-      className="p-[8px]"
+      className={classNames("p-[8px]", { "bg-[rgb(177,228,227)]": isActive })}
       key={index}
       onMouseEnter={(_) => setIsActive(true)}
       onMouseLeave={(_) => setIsActive(false)}
@@ -23,10 +23,7 @@ export default function DropdownItem({
           "text-[14px]",
           "font-medium",
           "tracking-[.5px]",
-          "cursor-pointer",
-          {
-            "bg-[rgb(177,228,227)]": isActive,
-          }
+          "cursor-pointer"
         )}
       >
         {item}
