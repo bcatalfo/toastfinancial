@@ -20,7 +20,15 @@ export default function Dropdown({
       <a className="block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]">
         {name}
       </a>
-      <ul className={classNames({ hidden: hidden })}>
+      <ul
+        className={classNames(
+          { hidden: hidden },
+          "absolute",
+          "right-0",
+          "top-[27.5px]",
+          "w-[197.7px]"
+        )}
+      >
         {items.map((item, index) => (
           <li key={index}>
             <a>{item}</a>

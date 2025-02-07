@@ -10,6 +10,5 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - Primary Header
 - - - Dropdowns for help and resources and about us
 - - - - Add the arrow svg
-- - - - Make the dropdown appear in the right location with CSS
 - - - - Make the dropdown look nicer with CSS
 - - - Switch to business version when you click on business
