@@ -15,3 +15,4 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - - - Make the dropdown look nicer with CSS
 - - - Switch to business version when you click on business
 - Deploy to toastfinancial.com
+- Set up automatic deployment
