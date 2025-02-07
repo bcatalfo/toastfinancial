@@ -21,6 +21,7 @@ export default function DropdownItem({
           "block",
           "text-[14px]",
           "font-medium",
+          "tracking-[.5px]",
           {
             "bg-[rgb(177,228,227)]": isActive,
           }
