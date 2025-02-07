@@ -8,6 +8,7 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 
 - Header
 - - Primary Header
+- - - Make logo say toast financial instead of bread financial
 - - - Dropdowns for help and resources and about us
 - - - - Add the arrow svg
 - - - - Make the dropdown look nicer with CSS
