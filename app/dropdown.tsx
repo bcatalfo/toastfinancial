@@ -36,7 +36,7 @@ export default function Dropdown({
       >
         {items.map((item, index) => (
           <li key={index}>
-            <a>{item}</a>
+            <a className="text-[#13294b]">{item}</a>
           </li>
         ))}
       </ul>
