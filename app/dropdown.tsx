@@ -22,7 +22,8 @@ export default function Dropdown({
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen },
           "block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]",
-          "bg-[url(/down-arrow.svg)]",
+          { "bg-[url(/down-arrow.svg)]": !isDropdownOpen },
+          { "bg-[url(/up-arrow.svg)]": isDropdownOpen },
           "bg-no-repeat",
           "bg-[top_5.4px_right_0px]"
         )}

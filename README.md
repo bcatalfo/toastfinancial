@@ -9,9 +9,6 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - Header
 - - Primary Header
 - - - Make logo say toast financial instead of bread financial
-- - - Dropdowns for help and resources and about us
-- - - - Add the arrow svg
-- - - - - Animate the arrow when you hover over the dropdown
 - - - Switch to business version when you click on business
 - Deploy to toastfinancial.com
 - Set up automatic deployment
