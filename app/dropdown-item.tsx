@@ -11,6 +11,7 @@ export default function DropdownItem({
   const [isActive, setIsActive] = useState(false);
   return (
     <li
+      className="p-[8px]"
       key={index}
       onMouseEnter={(_) => setIsActive(true)}
       onMouseLeave={(_) => setIsActive(false)}
