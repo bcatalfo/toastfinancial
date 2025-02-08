@@ -1,3 +1,8 @@
 export default function SecondaryHeader() {
-  return <div>This is a secondary header</div>;
+  return (
+    <div>
+      <div>Put dropdowns here</div>
+      <div>Put search bar and sign in here</div>
+    </div>
+  );
 }
