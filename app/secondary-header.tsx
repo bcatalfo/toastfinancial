@@ -13,14 +13,12 @@ export default function SecondaryHeader() {
               "Toast Cashback Card",
               "Toast Rewards Card",
             ]}
-            isUppercase={false}
-            shiftRight={true}
+            isSecondary={false}
           />
           <Dropdown
             name="Loans"
             items={["Debt Consolidation", "Buy Now, Pay Later"]}
-            isUppercase={false}
-            shiftRight={true}
+            isSecondary={false}
           />
           <Dropdown
             name="Savings"
@@ -31,8 +29,7 @@ export default function SecondaryHeader() {
               "IRAs: Retirement Savings & CDs",
               "Forms & Documents",
             ]}
-            isUppercase={false}
-            shiftRight={true}
+            isSecondary={false}
           />
         </ul>
       </div>

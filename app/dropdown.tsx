@@ -7,13 +7,11 @@ import DropdownItem from "./dropdown-item";
 export default function Dropdown({
   name,
   items,
-  isUppercase,
-  shiftRight,
+  isSecondary,
 }: {
   name: string;
   items: string[];
-  isUppercase: boolean;
-  shiftRight: boolean;
+  isSecondary: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (
@@ -25,7 +23,7 @@ export default function Dropdown({
       <a
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen },
-          { uppercase: isUppercase },
+          { uppercase: !isSecondary },
           "block leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]",
           { "bg-[url(/down-arrow.svg)]": !isDropdownOpen },
           { "bg-[url(/up-arrow.svg)]": isDropdownOpen },
@@ -38,7 +36,7 @@ export default function Dropdown({
       <ul
         className={classNames(
           { hidden: !isDropdownOpen },
-          { "left-[-16px]": shiftRight },
+          { "left-[-16px]": isSecondary },
           "absolute",
           "right-0",
           "top-[27.5px]",
