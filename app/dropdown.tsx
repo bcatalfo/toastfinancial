@@ -25,8 +25,15 @@ export default function Dropdown({
           { "text-[rgb(177,228,227)]": isDropdownOpen },
           { uppercase: !isSecondary },
           "block leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]",
-          { "bg-[url(/down-arrow.svg)]": !isDropdownOpen },
-          { "bg-[url(/up-arrow.svg)]": isDropdownOpen },
+          { "bg-[url(/down-arrow.svg)]": !isDropdownOpen && !isSecondary },
+          {
+            "bg-[url(/secondary-down-arrow.svg)]":
+              !isDropdownOpen && isSecondary,
+          },
+          { "bg-[url(/up-arrow.svg)]": isDropdownOpen && !isSecondary },
+          {
+            "bg-[url(/secondary-up-arrow.svg)]": isDropdownOpen && isSecondary,
+          },
           "bg-no-repeat",
           "bg-[top_5.4px_right_0px]"
         )}
