@@ -7,9 +7,11 @@ import DropdownItem from "./dropdown-item";
 export default function Dropdown({
   name,
   items,
+  isUppercase,
 }: {
   name: string;
   items: string[];
+  isUppercase: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (
@@ -21,7 +23,8 @@ export default function Dropdown({
       <a
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen },
-          "block uppercase leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]",
+          { uppercase: isUppercase },
+          "block leading-[16.8px] pr-[12.54px] relative font-semibold text-[12px] tracking-[.5px]",
           { "bg-[url(/down-arrow.svg)]": !isDropdownOpen },
           { "bg-[url(/up-arrow.svg)]": isDropdownOpen },
           "bg-no-repeat",
