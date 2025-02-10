@@ -7,11 +7,11 @@ import DropdownItem from "./dropdown-item";
 export default function Dropdown({
   name,
   items,
-  isSecondary,
+  isSecondary = false,
 }: {
   name: string;
   items: string[];
-  isSecondary: boolean;
+  isSecondary?: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (

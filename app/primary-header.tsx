@@ -29,7 +29,6 @@ export default function PrimaryHeader() {
           <Dropdown
             name="Help & Resources"
             items={["Help Center", "Financial Education"]}
-            isSecondary={false}
           />
           <Dropdown
             name="About Us"
@@ -40,7 +39,6 @@ export default function PrimaryHeader() {
               "Sustainability",
               "Investors",
             ]}
-            isSecondary={false}
           />
         </ul>
       </div>
