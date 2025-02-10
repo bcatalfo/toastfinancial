@@ -13,12 +13,12 @@ export default function SecondaryHeader() {
               "Toast Cashback Card",
               "Toast Rewards Card",
             ]}
-            isSecondary={false}
+            isSecondary={true}
           />
           <Dropdown
             name="Loans"
             items={["Debt Consolidation", "Buy Now, Pay Later"]}
-            isSecondary={false}
+            isSecondary={true}
           />
           <Dropdown
             name="Savings"
@@ -29,7 +29,7 @@ export default function SecondaryHeader() {
               "IRAs: Retirement Savings & CDs",
               "Forms & Documents",
             ]}
-            isSecondary={false}
+            isSecondary={true}
           />
         </ul>
       </div>
