@@ -8,10 +8,12 @@ export default function Dropdown({
   name,
   items,
   isUppercase,
+  shiftRight,
 }: {
   name: string;
   items: string[];
   isUppercase: boolean;
+  shiftRight: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (
@@ -36,6 +38,7 @@ export default function Dropdown({
       <ul
         className={classNames(
           { hidden: !isDropdownOpen },
+          { "left-[-16px]": shiftRight },
           "absolute",
           "right-0",
           "top-[27.5px]",

@@ -30,6 +30,7 @@ export default function PrimaryHeader() {
             name="Help & Resources"
             items={["Help Center", "Financial Education"]}
             isUppercase={true}
+            shiftRight={false}
           />
           <Dropdown
             name="About Us"
@@ -41,6 +42,7 @@ export default function PrimaryHeader() {
               "Investors",
             ]}
             isUppercase={true}
+            shiftRight={false}
           />
         </ul>
       </div>
