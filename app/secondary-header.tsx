@@ -1,6 +1,6 @@
 export default function SecondaryHeader() {
   return (
-    <div>
+    <div className="px-[80px]">
       <div>Put dropdowns here</div>
       <div>Put search bar and sign in here</div>
     </div>
