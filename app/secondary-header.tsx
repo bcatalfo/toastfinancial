@@ -2,7 +2,7 @@ import Dropdown from "./dropdown";
 
 export default function SecondaryHeader() {
   return (
-    <div className="h-[66px] px-[80px] flex flex-row justify-between items-center">
+    <div className="hidden lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center">
       <div>
         <ul className="flex gap-[36px]">
           <Dropdown
