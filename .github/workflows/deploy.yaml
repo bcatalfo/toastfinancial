@@ -1,4 +1,4 @@
-name: remote ssh command
+name: Deploy to VPS via SSH
 on: [push]
 jobs:
   build:
@@ -12,5 +12,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            whoami
-            echo "Is this working??"
+            cd ~/toastfinancial
+            git pull
+            npm ci
+            npm start build
+            pm2 restart 0
