@@ -15,3 +15,4 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - - Credit Cards, Loans, Savings dropdowns
 - - - Search bar
 - - - Sign in
+- Media queries for mobile
