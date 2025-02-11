@@ -15,5 +15,5 @@ jobs:
             cd ~/toastfinancial
             git pull
             npm ci
-            npm start build
+            npm run build
             pm2 restart 0
