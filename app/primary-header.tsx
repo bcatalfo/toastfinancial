@@ -4,7 +4,7 @@ import Dropdown from "./dropdown";
 
 export default function PrimaryHeader() {
   return (
-    <div className="h-[64px] px-[80px] w-full flex bg-[#13294b] text-white items-center justify-between">
+    <div className="h-[64px] px-[24px] lg:px-[40px] xl:px-[80px] w-full flex bg-[#13294b] text-white items-center justify-between">
       <div className="hidden lg:h-full lg:flex">
         <ul className="font-semibold flex gap-x-[72px] items-center">
           <li className="bg-[url(/header-rain-image.svg)] h-full flex flex-row items-center relative">
