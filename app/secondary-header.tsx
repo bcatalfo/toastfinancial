@@ -1,8 +1,14 @@
 import Dropdown from "./dropdown";
+import classNames from "classnames";
 
-export default function SecondaryHeader() {
+export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
   return (
-    <div className="hidden lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center">
+    <div
+      className={classNames(
+        { hidden: !isOpen },
+        "lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center"
+      )}
+    >
       <div>
         <ul className="flex gap-[36px]">
           <Dropdown

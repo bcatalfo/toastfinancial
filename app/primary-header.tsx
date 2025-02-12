@@ -2,7 +2,11 @@ import Image from "next/image";
 import logo from "../public/Bread Logo.svg";
 import Dropdown from "./dropdown";
 
-export default function PrimaryHeader() {
+export default function PrimaryHeader({
+  setSecondaryOpen,
+}: {
+  setSecondaryOpen: () => void;
+}) {
   return (
     <div className="h-[64px] px-[24px] lg:px-[40px] xl:px-[80px] w-full flex bg-[#13294b] text-white items-center justify-between">
       <div className="hidden lg:h-full lg:flex">
@@ -44,7 +48,11 @@ export default function PrimaryHeader() {
       </div>
       <div className="lg:hidden flex items-center">
         <div> Sign In</div>
-        <div className="ml-[12px]"> Hamburger </div>
+        <div className="ml-[12px]">
+          <button type="button" onClick={setSecondaryOpen}>
+            Hamburger
+          </button>
+        </div>
       </div>
     </div>
   );
