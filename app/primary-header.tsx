@@ -42,6 +42,10 @@ export default function PrimaryHeader() {
           />
         </ul>
       </div>
+      <div className="lg:hidden flex items-center">
+        <div> Sign In</div>
+        <div> Hamburger </div>
+      </div>
     </div>
   );
 }
