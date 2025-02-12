@@ -11,7 +11,9 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
       )}
     >
       <div>
-        <ul className="flex gap-[36px]">
+        <ul
+          className={classNames("flex flex-col", "lg:gap-[36px] lg:flex-row")}
+        >
           <Dropdown
             name="Credit Cards"
             items={[
