@@ -24,7 +24,7 @@ export default function PrimaryHeader() {
           <Image src={logo} alt="Logo image" />
         </a>
       </div>
-      <div>
+      <div className="hidden lg:flex">
         <ul className="flex items-center gap-[36px]">
           <Dropdown
             name="Help & Resources"
