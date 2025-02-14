@@ -10,6 +10,16 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
         "lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center"
       )}
     >
+      <div className="lg:hidden">
+        <ul>
+          <li>
+            <a>Personal</a>
+          </li>
+          <li>
+            <a>Business</a>
+          </li>
+        </ul>
+      </div>
       <div>
         <ul
           className={classNames("flex flex-col", "lg:gap-[36px] lg:flex-row")}
