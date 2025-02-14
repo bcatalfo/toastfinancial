@@ -12,8 +12,8 @@ export default function PrimaryHeader({
   return (
     <div
       className={classNames(
-        "h-[64px] px-[24px] w-full flex bg-[#13294b] text-white items-center justify-between",
-        "lg:px-[40px]",
+        "h-[82px] px-[24px] w-full flex bg-[#13294b] text-white items-center justify-between",
+        "lg:h-[64px] lg:px-[40px]",
         "xl:px-[80px]"
       )}
     >
