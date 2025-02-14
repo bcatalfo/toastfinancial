@@ -21,7 +21,10 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
       </div>
       <div>
         <ul
-          className={classNames("flex flex-col", "lg:gap-[36px] lg:flex-row")}
+          className={classNames(
+            "flex flex-col bg-white",
+            "lg:gap-[36px] lg:flex-row"
+          )}
         >
           <Dropdown
             name="Credit Cards"
