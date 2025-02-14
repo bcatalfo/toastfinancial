@@ -2,6 +2,7 @@ import Image from "next/image";
 import logo from "../public/Bread Logo.svg";
 import Dropdown from "./dropdown";
 import Nav from "./nav";
+import classNames from "classnames";
 
 export default function PrimaryHeader({
   setSecondaryOpen,
@@ -9,7 +10,13 @@ export default function PrimaryHeader({
   setSecondaryOpen: () => void;
 }) {
   return (
-    <div className="h-[64px] px-[24px] lg:px-[40px] xl:px-[80px] w-full flex bg-[#13294b] text-white items-center justify-between">
+    <div
+      className={classNames(
+        "h-[64px] px-[24px] w-full flex bg-[#13294b] text-white items-center justify-between",
+        "lg:px-[40px]",
+        "xl:px-[80px]"
+      )}
+    >
       <div className="hidden lg:h-full lg:flex">
         <Nav />
       </div>
