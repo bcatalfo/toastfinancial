@@ -1,5 +1,6 @@
 import Dropdown from "./dropdown";
 import classNames from "classnames";
+import Nav from "./nav";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
   return (
@@ -10,15 +11,13 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
         "lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center"
       )}
     >
-      <div className="lg:hidden">
-        <ul>
-          <li>
-            <a>Personal</a>
-          </li>
-          <li>
-            <a>Business</a>
-          </li>
-        </ul>
+      <div
+        className={classNames(
+          "flex w-full h-[73px] px-[24px] py-0",
+          "lg:hidden"
+        )}
+      >
+        <Nav />
       </div>
       <div>
         <ul
