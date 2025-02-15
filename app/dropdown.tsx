@@ -16,7 +16,10 @@ export default function Dropdown({
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (
     <li
-      className="h-[28px] relative flex items-center"
+      className={classNames(
+        "relative flex flex-col items-center",
+        "lg:h-[28px] lg:flex-row"
+      )}
       onMouseEnter={(_) => setDropdownOpen(true)}
       onMouseLeave={(_) => setDropdownOpen(false)}
     >
@@ -44,14 +47,8 @@ export default function Dropdown({
         className={classNames(
           { hidden: !isDropdownOpen },
           { "left-[-16px]": isSecondary },
-          "absolute",
-          "right-0",
-          "top-[27.5px]",
-          "w-[197.7px]",
-          "bg-white",
-          "rounded-[8px]",
-          "p-[7px]",
-          "shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
+          "bg-[#f4f5f5] flex flex-col",
+          "lg:absolute lg:right-0 lg:top-[27.5px] lg:w-[197.7px] lg:bg-white lg:rounded-[8px] lg:p-[7px] lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
         )}
       >
         {items.map((item, index) => (
