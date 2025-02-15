@@ -27,9 +27,9 @@ export default function Dropdown({
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen },
           {
-            "lg:leading-[19.6px] lg:text-[14px] lg:w-auto": isSecondary,
+            "lg:leading-[19.6px] lg:text-[14px] lg:w-auto lg:p-0": isSecondary,
           },
-          { "w-full": isSecondary },
+          { "w-full py-[28px] px-[20px]": isSecondary },
           "relative font-medium tracking-[.5px] lg:pr-[12.54px]",
           { "uppercase leading-[16.8px] block text-[12px]": !isSecondary },
           { "bg-[url(/down-arrow.svg)]": !isDropdownOpen && !isSecondary },
