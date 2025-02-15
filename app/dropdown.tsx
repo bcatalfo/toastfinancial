@@ -26,8 +26,11 @@ export default function Dropdown({
       <a
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen },
-          { uppercase: !isSecondary },
-          "block lg:leading-[19.6px] pr-[12.54px] relative font-medium lg-text-[14px] tracking-[.5px]",
+          {
+            "lg:leading-[19.6px] lg:text-[14px]": isSecondary,
+          },
+          "relative font-medium tracking-[.5px] lg:pr-[12.54px]",
+          { "uppercase leading-[16.8px] block text-[12px]": !isSecondary },
           { "bg-[url(/down-arrow.svg)]": !isDropdownOpen && !isSecondary },
           {
             "bg-[url(/secondary-down-arrow.svg)]":
@@ -38,7 +41,8 @@ export default function Dropdown({
             "bg-[url(/secondary-up-arrow.svg)]": isDropdownOpen && isSecondary,
           },
           "bg-no-repeat",
-          "bg-[top_5.4px_right_0px]"
+          { "bg-[top_5.4px_right_0px]": !isSecondary },
+          { "bg-[center_right_20px] lg:bg-[top_7.5px_right_0px]": isSecondary }
         )}
       >
         {name}
