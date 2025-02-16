@@ -29,7 +29,7 @@ export default function Dropdown({
           {
             "lg:leading-[19.6px] lg:text-[14px] lg:w-auto lg:p-0": isSecondary,
           },
-          { "w-full py-[28px] px-[20px]": isSecondary },
+          { "w-full py-[28px] px-[20px] text-[18px]": isSecondary },
           "relative font-medium tracking-[.5px] lg:pr-[12.54px]",
           { "uppercase leading-[16.8px] block text-[12px]": !isSecondary },
           { "bg-[url(/down-arrow.svg)]": !isDropdownOpen && !isSecondary },
