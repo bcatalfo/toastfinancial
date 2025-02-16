@@ -52,7 +52,7 @@ export default function Dropdown({
         className={classNames(
           { hidden: !isDropdownOpen },
           { "left-[-16px]": isSecondary },
-          "bg-[#f4f5f5] flex flex-col",
+          "bg-[#f4f5f5] flex flex-col w-full",
           "lg:absolute lg:right-0 lg:top-[27.5px] lg:w-[197.7px] lg:bg-white lg:rounded-[8px] lg:p-[7px] lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
         )}
       >
