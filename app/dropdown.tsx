@@ -25,7 +25,8 @@ export default function Dropdown({
     >
       <a
         className={classNames(
-          { "text-[rgb(177,228,227)]": isDropdownOpen },
+          { "text-[rgb(177,228,227)]": isDropdownOpen && !isSecondary },
+          { "text-[rgb(28,129,149)]": isDropdownOpen && isSecondary },
           {
             "lg:leading-[19.6px] lg:text-[14px] lg:w-auto lg:p-0": isSecondary,
           },
