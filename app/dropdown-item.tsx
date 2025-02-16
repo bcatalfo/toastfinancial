@@ -5,7 +5,7 @@ export default function DropdownItem({ item }: { item: string }) {
   const [isActive, setIsActive] = useState(false);
   return (
     <li
-      className={classNames("p-[8px]", "rounded-[4px]", {
+      className={classNames("py-[20px] px-[24px] lg:p-[8px]", "rounded-[4px]", {
         "bg-[rgb(177,228,227)]": isActive,
       })}
       onMouseEnter={(_) => setIsActive(true)}
