@@ -47,9 +47,11 @@ export default function PrimaryHeader({
       <div className="lg:hidden flex items-center">
         <div> Sign In</div>
         <div className="ml-[12px]">
-          <button type="button" onClick={setSecondaryOpen}>
-            Hamburger
-          </button>
+          <button
+            type="button"
+            className="bg-[url(/hamburger.svg)] w-[40px] h-[40px]"
+            onClick={setSecondaryOpen}
+          ></button>
         </div>
       </div>
     </div>
