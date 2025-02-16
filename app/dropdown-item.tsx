@@ -15,7 +15,7 @@ export default function DropdownItem({ item }: { item: string }) {
         className={classNames(
           "text-bread-black",
           "block",
-          "text-[14px]",
+          "text-[18px] lg:text-[14px]",
           "font-medium",
           "tracking-[.5px]",
           "cursor-pointer"
