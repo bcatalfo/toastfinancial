@@ -22,8 +22,8 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
       <div>
         <ul
           className={classNames(
-            "flex flex-col bg-white",
-            "lg:gap-[36px] lg:flex-row"
+            "flex flex-col bg-white mx-[24px] mb-[12px]",
+            "lg:gap-[36px] lg:flex-row lg:m-0"
           )}
         >
           <Dropdown
