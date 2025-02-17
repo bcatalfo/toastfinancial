@@ -4,6 +4,7 @@ import Dropdown from "./dropdown";
 import Nav from "./nav";
 import classNames from "classnames";
 import SignIn from "./sign-in";
+import Help from "./help";
 
 export default function PrimaryHeader({
   setSecondaryOpen,
@@ -32,22 +33,7 @@ export default function PrimaryHeader({
         </a>
       </div>
       <div className="hidden lg:flex">
-        <ul className="flex items-center gap-[36px]">
-          <Dropdown
-            name="Help & Resources"
-            items={["Help Center", "Financial Education"]}
-          />
-          <Dropdown
-            name="About Us"
-            items={[
-              "About Toast Financial",
-              "Careers",
-              "News & Insights",
-              "Sustainability",
-              "Investors",
-            ]}
-          />
-        </ul>
+        <Help />
       </div>
       <div className="lg:hidden flex items-center">
         <div>
