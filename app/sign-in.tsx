@@ -57,6 +57,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none lg:before:w-[200px] lg:before:border-t-[1px] lg:before:border-solid lg:before:border-[#d0d3d4] lg:before:block lg:before:h-full lg:before:top-[-16px] lg:before:relative lg:before:right-[14.5px]":
                 index == arr.length - 1,
             },
+            { "lg:mb-[8px]": index == arr.length - 2 },
             "lg:my-0 lg:mx-[7px]",
             "hover:bg-[#b1e4e3] hover:rounded-sm"
           )}
