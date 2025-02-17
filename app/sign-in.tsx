@@ -48,6 +48,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               "px-[24px] lg:p-[8px]",
               { "py-[20px]": index != 3 },
               { "pt-[32px] pb-[20px]": index == 3 },
+              { "mt-[12px] lg:mt-[8px] ": index == 3 },
               "lg:my-0 lg:mx-[7px]"
             )}
           >
