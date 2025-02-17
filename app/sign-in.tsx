@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
+    <div className="relative">
       <button
         type="button"
         className={classNames(
@@ -27,7 +27,7 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
         </div>
       )}
       {isSecondary && <SignInDropdown isHidden={!isOpen} />}
-    </>
+    </div>
   );
 }
 
@@ -36,7 +36,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
     <ul
       className={classNames(
         { hidden: isHidden },
-        "flex flex-col lg:absolute bg-[rgb(244,245,245)] lg:bg-white rounded-lg lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)] py-[12px] lg:py-[8px]",
+        "flex flex-col lg:absolute lg:top-[48px] lg:right-0 bg-[rgb(244,245,245)] lg:bg-white rounded-lg lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)] py-[12px] lg:py-[8px]",
         "w-full lg:w-[200px]"
       )}
     >
