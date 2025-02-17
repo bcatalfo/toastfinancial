@@ -29,8 +29,15 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
 
 export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
   return (
-    <ul className={classNames({ hidden: isHidden }, "flex lg:absolute")}>
-      <li>Credit Cards</li>
+    <ul
+      className={classNames(
+        { hidden: isHidden },
+        "flex lg:absoluteb bg-[rgb(244,245,245)]"
+      )}
+    >
+      <li>
+        <a className="text-bread-black">Credit Cards</a>
+      </li>
     </ul>
   );
 }
