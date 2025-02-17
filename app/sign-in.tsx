@@ -13,7 +13,12 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
         Sign In
       </button>
       {!isSecondary && (
-        <div>
+        <div
+          className={classNames({
+            "fixed bg-[rgba(19,41,75,0.6)] w-full h-[calc(100vh-80px)] left-0 z-4 top-[80px]":
+              isOpen,
+          })}
+        >
           <SignInDropdown isHidden={!isOpen} />
         </div>
       )}
