@@ -2,6 +2,7 @@ import Dropdown from "./dropdown";
 import classNames from "classnames";
 import Nav from "./nav";
 import SignIn from "./sign-in";
+import Help from "./help";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
   return (
@@ -55,7 +56,9 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
           />
         </ul>
       </div>
-      <div className="flex lg:hidden">Mobile Help Links</div>
+      <div className="flex lg:hidden">
+        <Help />
+      </div>
       <div className="flex lg:hidden">Mobile Search</div>
       <div className="hidden lg:flex lg:gap-[36px]">
         <div>Search Bar</div>
