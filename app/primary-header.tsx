@@ -51,7 +51,7 @@ export default function PrimaryHeader({
       </div>
       <div className="lg:hidden flex items-center">
         <div>
-          <SignIn />
+          <SignIn isSecondary={false} />
         </div>
         <div className="ml-[12px]">
           <button

@@ -58,7 +58,7 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
       <div className="flex gap-[36px]">
         <div>Search Bar</div>
         <div>
-          <SignIn />
+          <SignIn isSecondary={true} />
         </div>
       </div>
     </div>
