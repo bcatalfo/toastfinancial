@@ -45,10 +45,10 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
           <li
             key={index}
             className={classNames(
-              "px-[24px]",
+              "px-[24px] lg:p-[8px]",
               { "py-[20px]": index != 3 },
               { "pt-[32px] pb-[20px]": index == 3 },
-              "lg:p-[8px] lg:my-0 lg:mx-[7px]"
+              "lg:my-0 lg:mx-[7px]"
             )}
           >
             <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px] tracking-[.5px]">
