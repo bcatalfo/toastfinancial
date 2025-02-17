@@ -56,9 +56,19 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               "lg:my-0 lg:mx-[7px]"
             )}
           >
-            <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px] tracking-[.5px]">
-              {name}
-            </a>
+            {index != 3 && (
+              <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px] tracking-[.5px]">
+                {name}
+              </a>
+            )}
+            {index == 3 && (
+              <button
+                type="button"
+                className="text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%]"
+              >
+                {name}
+              </button>
+            )}
           </li>
         )
       )}
