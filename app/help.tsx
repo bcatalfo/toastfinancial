@@ -2,7 +2,7 @@ import Dropdown from "./dropdown";
 
 export default function Help({ isDark = false }: { isDark?: boolean }) {
   return (
-    <ul className="flex flex-col lg:flex-row items-center gap-[36px]">
+    <ul className="flex flex-col lg:flex-row items-center gap-[36px] w-full">
       <Dropdown
         name="Help & Resources"
         items={["Help Center", "Financial Education"]}
