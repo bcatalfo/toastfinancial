@@ -64,7 +64,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
             {index == 3 && (
               <button
                 type="button"
-                className="bg-[url(/cross-link-arrow.svg)] bg-no-repeat bg-[top_7px_right_4px] lg:bg-[top_4.5px_right_0px] pr-[12.5px] text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
+                className="bg-[url(/cross-link-arrow.svg)] bg-no-repeat bg-[top_7px_right_0px] lg:bg-[top_4.5px_right_0px] pr-[12.5px] text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
               >
                 {name}
               </button>
