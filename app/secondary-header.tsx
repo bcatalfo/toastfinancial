@@ -57,7 +57,7 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
         </ul>
       </div>
       <div className="flex lg:hidden">
-        <Help />
+        <Help isDark={true} />
       </div>
       <div className="flex lg:hidden">Mobile Search</div>
       <div className="hidden lg:flex lg:gap-[36px]">
