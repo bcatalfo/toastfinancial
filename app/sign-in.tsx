@@ -50,7 +50,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               { "pt-[32px] pb-[20px]": index == 3 },
               { "mt-[12px] lg:mt-[8px] ": index == 3 },
               {
-                "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none":
+                "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none lg:before:w-[200px] lg:before:border-t-[1px] lg:before:border-solid lg:before:border-[#d0d3d4] lg:before:block lg:before:h-full lg:before:top-[-16px] lg:before:relative lg:before:right-[14.5px]":
                   index == 3,
               },
               "lg:my-0 lg:mx-[7px]"
