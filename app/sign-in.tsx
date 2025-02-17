@@ -39,16 +39,19 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
         "flex flex-col lg:absolute bg-[rgb(244,245,245)] lg:bg-white rounded-lg lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
       )}
     >
-      {["Credit Cards", "Savings", "Loans", "Business Sign In"].map((name) => (
-        <li
-          className={classNames(
-            "py-[20px] px-[24px]",
-            "lg:p-[8px] lg:my-0 lg:mx-[7px]"
-          )}
-        >
-          <a className="text-bread-black">{name}</a>
-        </li>
-      ))}
+      {["Credit Cards", "Savings", "Loans", "Business Sign In"].map(
+        (name, index) => (
+          <li
+            key={index}
+            className={classNames(
+              "py-[20px] px-[24px]",
+              "lg:p-[8px] lg:my-0 lg:mx-[7px]"
+            )}
+          >
+            <a className="text-bread-black">{name}</a>
+          </li>
+        )
+      )}
     </ul>
   );
 }
