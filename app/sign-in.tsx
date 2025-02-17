@@ -35,18 +35,16 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
         "flex flex-col lg:absolute bg-[rgb(244,245,245)]"
       )}
     >
-      <li>
-        <a className="text-bread-black">Credit Cards</a>
-      </li>
-      <li>
-        <a className="text-bread-black">Savings</a>
-      </li>
-      <li>
-        <a className="text-bread-black">Loans</a>
-      </li>
-      <li>
-        <a className="text-bread-black">Business Sign In</a>
-      </li>
+      {["Credit Cards", "Savings", "Loans", "Business Sign In"].map((name) => (
+        <li
+          className={classNames(
+            "py-[20px] px-[24px]",
+            "lg:p-[8px] lg:my-0 lg:mx-[7px]"
+          )}
+        >
+          <a className="text-bread-black">{name}</a>
+        </li>
+      ))}
     </ul>
   );
 }
