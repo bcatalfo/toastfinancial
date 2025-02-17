@@ -32,7 +32,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
     <ul
       className={classNames(
         { hidden: isHidden },
-        "flex flex-col lg:absolute bg-[rgb(244,245,245)] lg:bg-white rounded-lg"
+        "flex flex-col lg:absolute bg-[rgb(244,245,245)] lg:bg-white rounded-lg lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)]"
       )}
     >
       {["Credit Cards", "Savings", "Loans", "Business Sign In"].map((name) => (
