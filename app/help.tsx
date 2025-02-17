@@ -2,7 +2,7 @@ import Dropdown from "./dropdown";
 
 export default function Help() {
   return (
-    <ul className="flex items-center gap-[36px]">
+    <ul className="flex flex-col lg:flex-row items-center gap-[36px]">
       <Dropdown
         name="Help & Resources"
         items={["Help Center", "Financial Education"]}
