@@ -64,7 +64,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
             {index == 3 && (
               <button
                 type="button"
-                className="text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%]"
+                className="text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
               >
                 {name}
               </button>
