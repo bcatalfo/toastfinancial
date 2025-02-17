@@ -12,6 +12,5 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - Secondary Header
 - - - Search bar
 - - - Sign in
-- - - - Finish up tweaking the CSS
 - - - - Allow switching between business and personal sign-ins
 - Make favicon
