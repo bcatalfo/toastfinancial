@@ -12,3 +12,4 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - Secondary Header
 - - - Search bar
 - - - Sign in
+- Make favicon
