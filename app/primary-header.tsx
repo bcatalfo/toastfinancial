@@ -53,7 +53,7 @@ export default function PrimaryHeader({
         <div>
           <SignIn isSecondary={false} />
         </div>
-        <div className="ml-[12px]">
+        <div className="ml-[12px] flex">
           <button
             type="button"
             className={classNames(
