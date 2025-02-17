@@ -55,7 +55,7 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
           />
         </ul>
       </div>
-      <div className="flex gap-[36px]">
+      <div className="hidden lg:flex lg:gap-[36px]">
         <div>Search Bar</div>
         <div>
           <SignIn isSecondary={true} />
