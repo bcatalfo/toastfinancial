@@ -32,11 +32,20 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
     <ul
       className={classNames(
         { hidden: isHidden },
-        "flex lg:absoluteb bg-[rgb(244,245,245)]"
+        "flex flex-col lg:absolute bg-[rgb(244,245,245)]"
       )}
     >
       <li>
         <a className="text-bread-black">Credit Cards</a>
+      </li>
+      <li>
+        <a className="text-bread-black">Savings</a>
+      </li>
+      <li>
+        <a className="text-bread-black">Loans</a>
+      </li>
+      <li>
+        <a className="text-bread-black">Business Sign In</a>
       </li>
     </ul>
   );
