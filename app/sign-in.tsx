@@ -32,6 +32,11 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
 }
 
 export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
+  const [isPersonal, setIsPersonal] = useState(true);
+
+  const items = isPersonal
+    ? ["Credit Cards", "Savings", "Loans", "Business Sign In"]
+    : ["Merchant Portal", "Personal Sign In"];
   return (
     <ul
       className={classNames(
@@ -40,38 +45,37 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
         "w-full lg:w-[200px]"
       )}
     >
-      {["Credit Cards", "Savings", "Loans", "Business Sign In"].map(
-        (name, index) => (
-          <li
-            key={index}
-            className={classNames(
-              "px-[24px] lg:p-[8px]",
-              { "py-[20px]": index != 3 },
-              { "pt-[32px] pb-[20px]": index == 3 },
-              { "mt-[12px] lg:mt-[8px] ": index == 3 },
-              {
-                "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none lg:before:w-[200px] lg:before:border-t-[1px] lg:before:border-solid lg:before:border-[#d0d3d4] lg:before:block lg:before:h-full lg:before:top-[-16px] lg:before:relative lg:before:right-[14.5px]":
-                  index == 3,
-              },
-              "lg:my-0 lg:mx-[7px]"
-            )}
-          >
-            {index != 3 && (
-              <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px] tracking-[.5px]">
-                {name}
-              </a>
-            )}
-            {index == 3 && (
-              <button
-                type="button"
-                className="bg-[url(/cross-link-arrow.svg)] bg-no-repeat bg-[top_7px_right_0px] lg:bg-[top_4.5px_right_0px] pr-[12.5px] text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
-              >
-                {name}
-              </button>
-            )}
-          </li>
-        )
-      )}
+      {items.map((name, index, arr) => (
+        <li
+          key={index}
+          className={classNames(
+            "px-[24px] lg:p-[8px]",
+            { "py-[20px]": index != arr.length - 1 },
+            { "pt-[32px] pb-[20px]": index == arr.length - 1 },
+            { "mt-[12px] lg:mt-[8px] ": index == arr.length - 1 },
+            {
+              "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none lg:before:w-[200px] lg:before:border-t-[1px] lg:before:border-solid lg:before:border-[#d0d3d4] lg:before:block lg:before:h-full lg:before:top-[-16px] lg:before:relative lg:before:right-[14.5px]":
+                index == arr.length - 1,
+            },
+            "lg:my-0 lg:mx-[7px]"
+          )}
+        >
+          {index != arr.length - 1 && (
+            <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px] tracking-[.5px]">
+              {name}
+            </a>
+          )}
+          {index == arr.length - 1 && (
+            <button
+              type="button"
+              className="bg-[url(/cross-link-arrow.svg)] bg-no-repeat bg-[top_7px_right_0px] lg:bg-[top_4.5px_right_0px] pr-[12.5px] text-bread-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
+              onClick={() => setIsPersonal(!isPersonal)}
+            >
+              {name}
+            </button>
+          )}
+        </li>
+      ))}
     </ul>
   );
 }

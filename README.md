@@ -11,6 +11,4 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - - Switch to business version when you click on business
 - - Secondary Header
 - - - Search bar
-- - - Sign in
-- - - - Allow switching between business and personal sign-ins
 - Make favicon
