@@ -49,6 +49,10 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               { "py-[20px]": index != 3 },
               { "pt-[32px] pb-[20px]": index == 3 },
               { "mt-[12px] lg:mt-[8px] ": index == 3 },
+              {
+                "border-t-[1px] border-solid border-[#d0d3d4] lg:border-none":
+                  index == 3,
+              },
               "lg:my-0 lg:mx-[7px]"
             )}
           >
