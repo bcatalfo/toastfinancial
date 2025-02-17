@@ -6,8 +6,12 @@ import classNames from "classnames";
 
 export default function PrimaryHeader({
   setSecondaryOpen,
+  setSecondaryClosed,
+  isSecondaryOpen,
 }: {
   setSecondaryOpen: () => void;
+  setSecondaryClosed: () => void;
+  isSecondaryOpen: boolean;
 }) {
   return (
     <div
@@ -49,8 +53,18 @@ export default function PrimaryHeader({
         <div className="ml-[12px]">
           <button
             type="button"
-            className="bg-[url(/hamburger.svg)] w-[40px] h-[40px]"
+            className={classNames(
+              "bg-[url(/hamburger.svg)] w-[40px] h-[40px]",
+              { hidden: isSecondaryOpen }
+            )}
             onClick={setSecondaryOpen}
+          ></button>
+          <button
+            type="button"
+            className={classNames("bg-[url(/close.svg)] w-[40px] h-[40px]", {
+              hidden: !isSecondaryOpen,
+            })}
+            onClick={setSecondaryClosed}
           ></button>
         </div>
       </div>
