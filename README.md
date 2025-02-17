@@ -12,4 +12,3 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 - - Secondary Header
 - - - Search bar
 - Make favicon
-- Update automated deployment so that it doesn't deploy if npm run lint fails. Pre-commit hook for this?

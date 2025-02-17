@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logo from "../public/toast financial.svg";
-import Dropdown from "./dropdown";
 import Nav from "./nav";
 import classNames from "classnames";
 import SignIn from "./sign-in";
