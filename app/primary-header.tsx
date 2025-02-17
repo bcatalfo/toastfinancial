@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../public/Bread Logo.svg";
+import logo from "../public/toast financial.svg";
 import Dropdown from "./dropdown";
 import Nav from "./nav";
 import classNames from "classnames";
@@ -26,7 +26,7 @@ export default function PrimaryHeader({
       <div className="hidden lg:h-full lg:flex">
         <Nav />
       </div>
-      <div>
+      <div className="h-[50px] w-[200px] flex flex-col justify-center">
         <a className="cursor-pointer">
           <Image src={logo} alt="Logo image" />
         </a>

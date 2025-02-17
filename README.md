@@ -8,7 +8,6 @@ Check it out at [toastfinancial.com](https://toastfinancial.com/).
 
 - Header
 - - Primary Header
-- - - Make logo say toast financial instead of bread financial
 - - - Switch to business version when you click on business
 - - Secondary Header
 - - - Search bar
