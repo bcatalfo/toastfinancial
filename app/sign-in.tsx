@@ -48,7 +48,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
               "lg:p-[8px] lg:my-0 lg:mx-[7px]"
             )}
           >
-            <a className="text-bread-black text-[18px] lg:text-[14px] font-medium">
+            <a className="text-bread-black text-[18px] lg:text-[14px] font-medium leading-[24px] lg:leading-[19.6px]">
               {name}
             </a>
           </li>
