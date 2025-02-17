@@ -3,6 +3,7 @@ import logo from "../public/Bread Logo.svg";
 import Dropdown from "./dropdown";
 import Nav from "./nav";
 import classNames from "classnames";
+import SignIn from "./sign-in";
 
 export default function PrimaryHeader({
   setSecondaryOpen,
@@ -49,7 +50,9 @@ export default function PrimaryHeader({
         </ul>
       </div>
       <div className="lg:hidden flex items-center">
-        <div> Sign In</div>
+        <div>
+          <SignIn />
+        </div>
         <div className="ml-[12px]">
           <button
             type="button"

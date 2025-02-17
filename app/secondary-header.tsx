@@ -1,6 +1,7 @@
 import Dropdown from "./dropdown";
 import classNames from "classnames";
 import Nav from "./nav";
+import SignIn from "./sign-in";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
   return (
@@ -54,7 +55,12 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
           />
         </ul>
       </div>
-      <div>Put search bar and sign in here</div>
+      <div className="flex gap-[36px]">
+        <div>Search Bar</div>
+        <div>
+          <SignIn />
+        </div>
+      </div>
     </div>
   );
 }
