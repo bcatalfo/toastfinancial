@@ -1,8 +1,29 @@
 import classNames from "classnames";
-import { useState } from "react";
+import { RefObject, useEffect, useRef, useState } from "react";
 
 export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
+  const signInDropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (
+        !(signInDropdownRef as RefObject<HTMLElement>).current?.contains(
+          e.target as HTMLElement
+        ) &&
+        isOpen &&
+        !isSecondary
+      ) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [isOpen]);
+
   return (
     <div className="relative">
       <button
@@ -23,7 +44,7 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
               isOpen,
           })}
         >
-          <SignInDropdown isHidden={!isOpen} />
+          <SignInDropdown isHidden={!isOpen} ref={signInDropdownRef} />
         </div>
       )}
       {isSecondary && <SignInDropdown isHidden={!isOpen} />}
@@ -31,7 +52,13 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
   );
 }
 
-export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
+export function SignInDropdown({
+  isHidden,
+  ref = null,
+}: {
+  isHidden: boolean;
+  ref?: RefObject<any>;
+}) {
   const [isPersonal, setIsPersonal] = useState(true);
 
   const items = isPersonal
@@ -44,6 +71,7 @@ export function SignInDropdown({ isHidden }: { isHidden: boolean }) {
         "flex flex-col lg:absolute lg:top-[48px] lg:right-0 bg-[rgb(244,245,245)] lg:bg-white rounded-lg lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)] py-[12px] lg:py-[8px]",
         "w-full lg:w-[200px]"
       )}
+      ref={ref}
     >
       {items.map((name, index, arr) => (
         <li
