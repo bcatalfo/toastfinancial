@@ -27,7 +27,8 @@ export default function Dropdown({
     <li
       className={classNames(
         "relative flex flex-col items-center",
-        "lg:h-[28px] lg:flex-row"
+        "lg:h-[28px] lg:flex-row",
+        { "w-full lg:w-auto": isSecondary }
       )}
       onMouseEnter={(_) => setDropdownOpen(true)}
       onMouseLeave={(_) => setDropdownOpen(false)}
