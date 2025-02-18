@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Dropdown from "./dropdown";
 
 export default function Help({
@@ -8,7 +9,12 @@ export default function Help({
   isSecondary?: boolean;
 }) {
   return (
-    <ul className="flex flex-col lg:flex-row items-center gap-[36px] w-full">
+    <ul
+      className={classNames(
+        "flex flex-col lg:flex-row items-center gap-[36px] w-full",
+        { "bg-[#4e5f78]": isSecondary }
+      )}
+    >
       <Dropdown
         name="Help & Resources"
         items={["Help Center", "Financial Education"]}
