@@ -12,7 +12,7 @@ export default function Help({
     <ul
       className={classNames(
         "flex flex-col lg:flex-row items-center gap-0 lg:gap-[36px] w-full",
-        { "bg-[#4e5f78]": isSecondary }
+        { "bg-[#4e5f78] mb-[12px] mx-[24px]": isSecondary }
       )}
     >
       <Dropdown
