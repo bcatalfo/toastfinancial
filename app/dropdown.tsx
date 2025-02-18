@@ -1,7 +1,7 @@
 "use client";
 
 import classNames from "classnames";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DropdownItem from "./dropdown-item";
 
 export default function Dropdown({
@@ -16,6 +16,13 @@ export default function Dropdown({
   isDark?: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+      setIsMobile(true);
+    }
+  });
+
   return (
     <li
       className={classNames(
@@ -24,6 +31,11 @@ export default function Dropdown({
       )}
       onMouseEnter={(_) => setDropdownOpen(true)}
       onMouseLeave={(_) => setDropdownOpen(false)}
+      onClick={(_) => {
+        if (isMobile) {
+          setDropdownOpen(!isDropdownOpen);
+        }
+      }}
     >
       <a
         className={classNames(
