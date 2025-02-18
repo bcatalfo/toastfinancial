@@ -16,13 +16,13 @@ export default function Help({
       )}
     >
       <Dropdown
-        name="Help & Resources"
+        name="HELP & RESOURCES"
         items={["Help Center", "Financial Education"]}
         isDark={isDark}
         isSecondary={isSecondary}
       />
       <Dropdown
-        name="About Us"
+        name="ABOUT US"
         items={[
           "About Toast Financial",
           "Careers",
