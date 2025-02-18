@@ -22,7 +22,7 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
     return () => {
       document.removeEventListener("click", handleClick);
     };
-  }, [isOpen]);
+  }, [isOpen, isSecondary]);
 
   return (
     <div className="relative">
@@ -57,7 +57,7 @@ export function SignInDropdown({
   ref = null,
 }: {
   isHidden: boolean;
-  ref?: RefObject<any>;
+  ref?: RefObject<HTMLUListElement>;
 }) {
   const [isPersonal, setIsPersonal] = useState(true);
 
