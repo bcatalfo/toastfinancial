@@ -11,7 +11,7 @@ export default function Help({
   return (
     <ul
       className={classNames(
-        "flex flex-col lg:flex-row items-center gap-[36px] w-full",
+        "flex flex-col lg:flex-row items-center gap-0 lg:gap-[36px] w-full",
         { "bg-[#4e5f78]": isSecondary }
       )}
     >
