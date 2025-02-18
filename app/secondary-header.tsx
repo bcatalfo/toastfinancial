@@ -3,8 +3,17 @@ import classNames from "classnames";
 import Nav from "./nav";
 import SignIn from "./sign-in";
 import Help from "./help";
+import { useEffect, useState } from "react";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <div
       className={classNames(
@@ -37,11 +46,13 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
               "Toast Rewards Card",
             ]}
             isSecondary={true}
+            border={isMobile}
           />
           <Dropdown
             name="Loans"
             items={["Debt Consolidation", "Buy Now, Pay Later"]}
             isSecondary={true}
+            border={isMobile}
           />
           <Dropdown
             name="Savings"
@@ -57,7 +68,7 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
         </ul>
       </div>
       <div className="flex lg:hidden">
-        <Help isDark={true} isSecondary={true} />
+        <Help isDark={true} isSecondary={true} isMobile={isMobile} />
       </div>
       <div className="flex lg:hidden">Mobile Search</div>
       <div className="hidden lg:flex lg:gap-[36px]">

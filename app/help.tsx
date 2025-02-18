@@ -4,9 +4,11 @@ import Dropdown from "./dropdown";
 export default function Help({
   isDark = false,
   isSecondary = false,
+  isMobile = false,
 }: {
   isDark?: boolean;
   isSecondary?: boolean;
+  isMobile?: boolean;
 }) {
   return (
     <ul
@@ -20,6 +22,7 @@ export default function Help({
         items={["Help Center", "Financial Education"]}
         isDark={isDark}
         isSecondary={isSecondary}
+        border={isMobile}
       />
       <Dropdown
         name="ABOUT US"

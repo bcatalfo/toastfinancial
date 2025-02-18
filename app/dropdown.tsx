@@ -9,11 +9,13 @@ export default function Dropdown({
   items,
   isSecondary = false,
   isDark = false,
+  border = false,
 }: {
   name: string;
   items: string[];
   isSecondary?: boolean;
   isDark?: boolean;
+  border?: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,7 +30,10 @@ export default function Dropdown({
       className={classNames(
         "relative flex flex-col items-center",
         "lg:h-[28px] lg:flex-row",
-        { "w-full lg:w-auto": isSecondary }
+        { "w-full lg:w-auto": isSecondary },
+        { "border-solid border-b-[1px]": border },
+        { "border-bread-black": border && isDark },
+        { "border-[#dcdfe0]": border && !isDark }
       )}
       onMouseEnter={(_) => setDropdownOpen(true)}
       onMouseLeave={(_) => setDropdownOpen(false)}
