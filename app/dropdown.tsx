@@ -21,7 +21,7 @@ export default function Dropdown({
     if (window.matchMedia("(max-width: 1024px)").matches) {
       setIsMobile(true);
     }
-  });
+  }, []);
 
   return (
     <li
