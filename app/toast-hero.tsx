@@ -30,6 +30,7 @@ export default function ToastHero() {
             <img
               src="/hero-bg.png"
               className="w-full relative right-0 lg:top-0"
+              alt="Background Image"
             />
           </picture>
         </div>
