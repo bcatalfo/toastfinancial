@@ -18,7 +18,7 @@ export default function PrimaryHeader({
     <div
       className={classNames(
         "border-b-2 [border-image-source:linear-gradient(90deg,#59bec9_0%,#007dba)] [border-image-slice:1]",
-        "h-[82px] px-[24px] w-full flex bg-bread-black text-white items-center justify-between",
+        "h-[82px] px-[24px] w-full flex bg-toast-black text-white items-center justify-between",
         "lg:border-none lg:border-b- lg:h-[64px] lg:px-[40px]",
         "xl:px-[80px]"
       )}

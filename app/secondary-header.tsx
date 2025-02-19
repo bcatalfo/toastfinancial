@@ -19,7 +19,7 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
     <div
       className={classNames(
         { hidden: !isOpen },
-        "flex flex-col bg-bread-black",
+        "flex flex-col bg-toast-black",
         "lg:bg-white lg:h-[66px] lg:px-[80px] lg:flex lg:flex-row lg:justify-between lg:items-center"
       )}
     >

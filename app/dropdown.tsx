@@ -32,7 +32,7 @@ export default function Dropdown({
         "lg:h-[28px] lg:flex-row",
         { "w-full lg:w-auto": isSecondary },
         { "border-solid border-b-[1px]": border },
-        { "border-bread-black": border && isDark },
+        { "border-toast-black": border && isDark },
         { "border-[#dcdfe0]": border && !isDark }
       )}
       onMouseEnter={(_) => setDropdownOpen(true)}
@@ -47,7 +47,7 @@ export default function Dropdown({
         className={classNames(
           { "text-[rgb(177,228,227)]": isDropdownOpen && !isSecondary },
           { "text-[rgb(28,129,149)]": isDropdownOpen && isSecondary },
-          { "text-bread-black": !isDropdownOpen && !isDark && isSecondary },
+          { "text-toast-black": !isDropdownOpen && !isDark && isSecondary },
           { "text-white": !isDropdownOpen && isDark && isSecondary },
           {
             "lg:leading-[19.6px] lg:text-[14px] lg:w-auto lg:p-0": isSecondary,

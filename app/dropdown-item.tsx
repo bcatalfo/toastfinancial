@@ -13,7 +13,7 @@ export default function DropdownItem({ item }: { item: string }) {
     >
       <a
         className={classNames(
-          "text-bread-black",
+          "text-toast-black",
           "block",
           "text-[18px] lg:text-[14px]",
           "font-medium",
