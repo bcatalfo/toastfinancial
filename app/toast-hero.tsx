@@ -19,6 +19,9 @@ export default function ToastHero() {
             <li>No monthly or hidden fees</li>
           </ul>
         </div>
+        <div>
+          <a>More details</a>
+        </div>
       </div>
       <div>
         <div>
