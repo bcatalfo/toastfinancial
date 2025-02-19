@@ -17,8 +17,8 @@ export default function ToastHero() {
       <div>
         <div>
           <picture>
-            <source />
-            <img />
+            <source media="(min-width: 767px)" srcSet="/hero-bg-desktop.png" />
+            <img src="/hero-bg.png" />
           </picture>
         </div>
       </div>
