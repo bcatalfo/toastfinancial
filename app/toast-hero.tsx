@@ -23,10 +23,10 @@ export default function ToastHero() {
           <a>More details</a>
         </div>
         <div className="flex flex-col lg:flex-row items-start">
-          <a className="flex self-center lg:relative py-[16px] px-[40px] text-[white] bg-[#1c8195] rounded-3xl mb-[12px] lg:mb-0 lg:mt-[25px] lg:mr-[32px] text-[16px] font-semibold min-w-[280px] lg:min-w-auto justify-center">
+          <a className="flex self-center lg:relative py-[16px] px-[40px] text-[white] bg-[#1c8195] rounded-3xl mb-[12px] lg:mb-0 lg:mt-[25px] lg:mr-[32px] text-[16px] font-semibold min-w-[280px] lg:min-w-auto justify-center cursor-pointer">
             Open an account
           </a>
-          <a className="flex self-center lg:relative py-[16px] px-[40px] text-[#1c8195] bg-transparent border border-solid border-[#1c8195] rounded-3xl mb-[12px] lg:mb-0 lg:mt-[25px] lg:mr-[32px] text-[16px] font-semibold min-w-[280px] lg:min-w-auto text-center justify-center">
+          <a className="flex self-center lg:relative py-[16px] px-[40px] text-[#1c8195] bg-transparent border border-solid border-[#1c8195] rounded-3xl mb-[12px] lg:mb-0 lg:mt-[25px] lg:mr-[32px] text-[16px] font-semibold min-w-[280px] lg:min-w-auto text-center justify-center cursor-pointer">
             Learn more
           </a>
         </div>
