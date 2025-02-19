@@ -3,6 +3,7 @@
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import DropdownItem from "./dropdown-item";
+import useIsMobile from "./is-mobile";
 
 export default function Dropdown({
   name,
@@ -18,12 +19,7 @@ export default function Dropdown({
   border?: boolean;
 }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-      setIsMobile(true);
-    }
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <li
