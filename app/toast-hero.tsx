@@ -1,6 +1,6 @@
 export default function ToastHero() {
   return (
-    <div>
+    <div className="flex flex-col lg:flex-row">
       <div>
         <div>
           <h1>Earn 4.40% APY</h1>
