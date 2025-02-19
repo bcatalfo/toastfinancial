@@ -1,7 +1,7 @@
 export default function ToastHero() {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="pt-[40px] px-[16px] pb-[50px] lg:pt-[71px] lg:pr-0 lg:pb-0 lg:pl-[128px]">
+    <div className="flex flex-col lg:flex-row pb-[99px] h-[729px] lg:h-[560px]">
+      <div className="pt-[40px] px-[16px] pb-[50px] lg:pt-[71px] lg:pr-0 lg:pb-0 lg:pl-[128px] z-1">
         <div>
           <h1>
             <span className="text-[40px] lg:text-[54px]">
@@ -30,8 +30,9 @@ export default function ToastHero() {
             Learn more
           </a>
         </div>
+        <div className="w-full h-[45px]"></div>
       </div>
-      <div className="w-full lg:w-[55%]">
+      <div className="w-full lg:w-[55%] absolute right-0 bottom-[48px] lg:top-0 lg:bottom-auto">
         <div>
           <picture>
             <source media="(min-width: 767px)" srcSet="/hero-bg-desktop.png" />
