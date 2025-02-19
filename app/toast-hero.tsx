@@ -4,7 +4,7 @@ export default function ToastHero() {
       <div className="pt-[40px] px-[16px] pb-[50px] lg:pt-[71px] lg:pr-0 lg:pb-0 lg:pl-[128px]">
         <div>
           <h1>
-            <span>
+            <span className="text-[40px] lg:text-[54px]">
               <b>
                 Earn <span>4.40%</span> APY<sup>*</sup>
               </b>
