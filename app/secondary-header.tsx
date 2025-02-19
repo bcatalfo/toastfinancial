@@ -4,6 +4,7 @@ import Nav from "./nav";
 import SignIn from "./sign-in";
 import Help from "./help";
 import { useEffect, useState } from "react";
+import SearchBar from "./search-bar";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -70,9 +71,13 @@ export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
       <div className="flex lg:hidden">
         <Help isDark={true} isSecondary={true} isMobile={isMobile} />
       </div>
-      <div className="flex lg:hidden">Mobile Search</div>
+      <div className="block lg:hidden">
+        <SearchBar />
+      </div>
       <div className="hidden lg:flex lg:gap-[36px]">
-        <div>Search Bar</div>
+        <div>
+          <SearchBar />
+        </div>
         <div>
           <SignIn isSecondary={true} />
         </div>

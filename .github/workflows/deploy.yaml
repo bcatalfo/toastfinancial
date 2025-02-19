@@ -1,5 +1,8 @@
 name: Deploy to VPS via SSH
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   run-linters:
     name: Run linters
