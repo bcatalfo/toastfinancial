@@ -23,10 +23,12 @@ export default function ToastHero() {
           <a>More details</a>
         </div>
         <div className="flex flex-col lg:flex-row items-start">
-          <a className="flex self-center lg:relative lg:mr-[32px]">
+          <a className="flex self-center lg:relative lg:mr-[32px] py-[16px] px-[40px]">
             Open an account
           </a>
-          <a className="flex self-center lg:relative">Learn more</a>
+          <a className="flex self-center lg:relative py-[16px] px-[40px]">
+            Learn more
+          </a>
         </div>
       </div>
       <div className="w-full lg:w-[55%]">
