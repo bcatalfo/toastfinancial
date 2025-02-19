@@ -26,7 +26,7 @@ export default function ToastHero() {
           <a className="flex self-center lg:relative lg:mr-[32px] py-[16px] px-[40px] text-[white] bg-[#1c8195]">
             Open an account
           </a>
-          <a className="flex self-center lg:relative py-[16px] px-[40px]">
+          <a className="flex self-center lg:relative py-[16px] px-[40px] text-[#1c8195] bg-transparent border border-solid border-[#1c8195]">
             Learn more
           </a>
         </div>
