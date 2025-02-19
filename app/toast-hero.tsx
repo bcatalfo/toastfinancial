@@ -22,6 +22,9 @@ export default function ToastHero() {
           </picture>
         </div>
       </div>
+      <div>
+        <h2>Sign in</h2>
+      </div>
     </div>
   );
 }
