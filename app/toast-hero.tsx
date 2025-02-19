@@ -14,6 +14,14 @@ export default function ToastHero() {
           </ul>
         </div>
       </div>
+      <div>
+        <div>
+          <picture>
+            <source />
+            <img />
+          </picture>
+        </div>
+      </div>
     </div>
   );
 }
