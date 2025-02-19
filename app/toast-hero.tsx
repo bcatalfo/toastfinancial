@@ -22,6 +22,10 @@ export default function ToastHero() {
         <div>
           <a>More details</a>
         </div>
+        <div>
+          <a>Open a CD</a>
+          <a>Compare CDs</a>
+        </div>
       </div>
       <div className="w-full lg:w-[55%]">
         <div>
