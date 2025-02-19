@@ -44,7 +44,7 @@ export default function ToastHero() {
           </picture>
         </div>
       </div>
-      <div className="z-2 bg-white w-[calc(100%-30px)] lg:max-w-[520px] my-0 mx-[15px] lg:my-[auto] lg:mr-0 lg:ml-[40px] pt-[31px] px-[20px] pb-[35px] lg:pt-[48.8px] lg:px-[50px] lg:pb-[61px]">
+      <div className="z-2 bg-white w-[calc(100%-30px)] lg:max-w-[520px] my-0 mx-[15px] lg:my-[auto] lg:mr-0 lg:ml-[40px] pt-[31px] px-[20px] pb-[35px] lg:pt-[48.8px] lg:px-[50px] lg:pb-[61px] rounded-[20px]">
         <h2 className="text-[28px] lg:text-[36px] font-bold text-toast-black">
           Sign in
         </h2>
