@@ -8,7 +8,7 @@ import classNames from "classnames";
 export default function Header() {
   const [isSecondaryOpen, setSecondaryOpen] = useState(false);
   return (
-    <div className="h-[128px]">
+    <div className="h-[80px] lg:h-[128px]">
       <header
         className={classNames(
           "bg-toast-black lg:bg-white w-full left-[50%] transform-[translate(-50%)] fixed lg:relative z-4 top-0 flex flex-col max-w-[1440px]",
