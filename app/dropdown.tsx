@@ -87,7 +87,7 @@ export default function Dropdown({
         )}
       >
         {items.map((item, index) => (
-          <DropdownItem key={index} item={item} />
+          <DropdownItem key={index} item={item} isDark={isDark} />
         ))}
       </ul>
     </li>
