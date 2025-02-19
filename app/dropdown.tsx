@@ -1,7 +1,7 @@
 "use client";
 
 import classNames from "classnames";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DropdownItem from "./dropdown-item";
 import useIsMobile from "./is-mobile";
 
