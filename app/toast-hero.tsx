@@ -3,7 +3,13 @@ export default function ToastHero() {
     <div className="flex flex-col lg:flex-row">
       <div className="pt-[40px] px-[16px] pb-[50px] lg:pt-[71px] lg:pr-0 lg:pb-0 lg:pl-[128px]">
         <div>
-          <h1>Earn 4.40% APY</h1>
+          <h1>
+            <span>
+              <b>
+                Earn <span>4.40%</span> APY<sup>*</sup>
+              </b>
+            </span>
+          </h1>
           <h1>With a high-yield savings account</h1>
         </div>
         <div>
