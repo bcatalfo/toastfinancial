@@ -35,8 +35,16 @@ export default function Dropdown({
         { "border-toast-black": border && isDark },
         { "border-[#dcdfe0]": border && !isDark }
       )}
-      onMouseEnter={(_) => setDropdownOpen(true)}
-      onMouseLeave={(_) => setDropdownOpen(false)}
+      onMouseEnter={(_) => {
+        if (!isMobile) {
+          setDropdownOpen(true);
+        }
+      }}
+      onMouseLeave={(_) => {
+        if (!isMobile) {
+          setDropdownOpen(false);
+        }
+      }}
       onClick={(_) => {
         if (isMobile) {
           setDropdownOpen(!isDropdownOpen);
