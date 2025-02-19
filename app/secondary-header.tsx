@@ -3,17 +3,11 @@ import classNames from "classnames";
 import Nav from "./nav";
 import SignIn from "./sign-in";
 import Help from "./help";
-import { useEffect, useState } from "react";
 import SearchBar from "./search-bar";
+import useIsMobile from "./is-mobile";
 
 export default function SecondaryHeader({ isOpen }: { isOpen: boolean }) {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-      setIsMobile(true);
-    }
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <div
