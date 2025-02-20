@@ -15,10 +15,10 @@ export default function ToastHero() {
           </h1>
         </div>
         <div className="text-[16px] lg:text-[20px]">
-          <ul>
-            <li>Highly competitive rates **</li>
-            <li>FDIC insured</li>
-            <li>No monthly or hidden fees</li>
+          <ul className="pl-[32px] lg:pl-[20px]">
+            <li className="list-disc">Highly competitive rates **</li>
+            <li className="list-disc">FDIC insured</li>
+            <li className="list-disc">No monthly or hidden fees</li>
           </ul>
         </div>
         <div>
