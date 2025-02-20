@@ -1,3 +1,5 @@
+import ChooseAccount from "./choose-account";
+
 export default function ToastHero() {
   return (
     <div className="flex flex-col lg:flex-row pb-[99px] h-[729px] lg:h-[560px]">
@@ -50,6 +52,7 @@ export default function ToastHero() {
         <h2 className="text-[28px] lg:text-[36px] font-bold text-toast-black">
           Sign in
         </h2>
+        <ChooseAccount />
       </div>
     </div>
   );
