@@ -26,7 +26,8 @@ export default function ChooseAccount() {
               "min-w-[303px] w-full",
               "absolute top-[49px] right-0 left-0",
               "bg-white",
-              "rounded-b-3xl"
+              "rounded-b-3xl",
+              "shadow-[0px_8px_10px_rgba(78,92,111,0.058823529411764705),0px_20px_46px_rgba(78,92,111,0.10980392156862745)]"
             )}
           >
             <ul>
