@@ -17,7 +17,7 @@ export default function ToastHero() {
             with a high-yield savings account
           </h1>
         </div>
-        <div className="text-[16px] lg:text-[20px]">
+        <div className="text-[16px] lg:text-[20px] pt-[15px]">
           <ul className="pl-[32px] lg:pl-[20px]">
             <li className="list-disc">Highly competitive rates **</li>
             <li className="list-disc">FDIC insured</li>
