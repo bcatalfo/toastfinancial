@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import ChooseAccount from "./choose-account";
 
 export default function ToastHero() {
@@ -16,15 +17,23 @@ export default function ToastHero() {
             with a high-yield savings account
           </h1>
         </div>
-        <div className="text-[16px] lg:text-[20px]">
+        <div className="text-[16px] lg:text-[20px] pt-[15px]">
           <ul className="pl-[32px] lg:pl-[20px]">
             <li className="list-disc">Highly competitive rates **</li>
             <li className="list-disc">FDIC insured</li>
             <li className="list-disc">No monthly or hidden fees</li>
           </ul>
         </div>
-        <div>
-          <a>More details</a>
+        <div className="flex">
+          <a
+            className={classNames(
+              "text-[14px] mt-[16px] lg:mt-[8px] ml-0 lg:ml-[22px] mr-[12px] lg:mr-[10px]",
+              "leading-[18px] font-normal text-[#1c8195]",
+              "border-solid border-b-1 border-[#1c8195]"
+            )}
+          >
+            More details
+          </a>
         </div>
         <div className="flex flex-col lg:flex-row items-start">
           <a className="flex self-center lg:relative py-[16px] px-[40px] text-[white] bg-[#1c8195] rounded-3xl mb-[12px] lg:mb-0 lg:mt-[25px] lg:mr-[32px] text-[16px] font-semibold min-w-[280px] lg:min-w-auto justify-center cursor-pointer">
