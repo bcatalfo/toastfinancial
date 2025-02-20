@@ -24,7 +24,7 @@ export default function ToastHero() {
             <li className="list-disc">No monthly or hidden fees</li>
           </ul>
         </div>
-        <div>
+        <div className="flex">
           <a
             className={classNames(
               "text-[14px] mt-[16px] lg:mt-[8px] ml-0 lg:ml-[22px] mr-[12px] lg:mr-[10px]",
