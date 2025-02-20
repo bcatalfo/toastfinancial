@@ -12,7 +12,8 @@ export default function SignIn({ isSecondary }: { isSecondary: boolean }) {
           e.target as HTMLElement
         ) &&
         isOpen &&
-        !isSecondary
+        !isSecondary &&
+        (e.target as HTMLElement).id != "buttonInSignInDropdown"
       ) {
         setIsOpen(false);
       }
@@ -100,6 +101,7 @@ export function SignInDropdown({
               type="button"
               className="bg-[url(/cross-link-arrow.svg)] bg-no-repeat bg-[top_7px_right_0px] lg:bg-[top_4.5px_right_0px] pr-[12.5px] text-toast-black border-none cursor-pointer font-medium leading-[24px] lg:leading-[140%] text-[18px] lg:text-[14px]"
               onClick={() => setIsPersonal(!isPersonal)}
+              id="buttonInSignInDropdown"
             >
               {name}
             </button>
