@@ -4,15 +4,17 @@ export default function ToastHero() {
       <div className="pt-[40px] px-[16px] pb-[50px] lg:pt-[71px] lg:pr-0 lg:pb-0 lg:pl-[128px] z-1">
         <div>
           <h1>
-            <span className="text-[40px] lg:text-[54px]">
+            <span className="text-[40px] lg:text-[54px] text-toast-black leading-[48px] lg:leading-[64px]">
               <b>
                 Earn <span>4.40%</span> APY<sup>*</sup>
               </b>
             </span>
           </h1>
-          <h1>With a high-yield savings account</h1>
+          <h1 className="font-bold text-[20px] lg:text-[24px] leading-[28px] lg:leading[33.6px]">
+            with a high-yield savings account
+          </h1>
         </div>
-        <div>
+        <div className="text-[16px] lg:text-[20px]">
           <ul>
             <li>Highly competitive rates **</li>
             <li>FDIC insured</li>

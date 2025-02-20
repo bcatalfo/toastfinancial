@@ -18,7 +18,7 @@ export default function RootLayout({
       lang="en"
       className={classNames(poppins.className, "text-[14px]", "leading-[21px]")}
     >
-      <body>{children}</body>
+      <body className="text-[#0d2442]">{children}</body>
     </html>
   );
 }
