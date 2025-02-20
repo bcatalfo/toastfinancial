@@ -11,7 +11,7 @@ export default function ToastHero() {
             </span>
           </h1>
           <h1 className="font-bold text-[20px] lg:text-[24px] leading-[28px] lg:leading[33.6px]">
-            With a high-yield savings account
+            with a high-yield savings account
           </h1>
         </div>
         <div className="text-[16px] lg:text-[20px]">
