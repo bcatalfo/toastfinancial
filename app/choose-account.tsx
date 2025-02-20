@@ -31,17 +31,17 @@ export default function ChooseAccount() {
           >
             <ul>
               <li>
-                <a>
+                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
                   <span>Credit Cards</span>
                 </a>
               </li>
               <li>
-                <a>
+                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
                   <span>Toast Loans & Payments</span>
                 </a>
               </li>
               <li>
-                <a>
+                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
                   <span>Toast Savings</span>
                 </a>
               </li>
