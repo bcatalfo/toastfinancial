@@ -20,7 +20,9 @@ export default function ChooseAccount() {
           <div
             className={classNames(
               { hidden: !isOpen },
-              "absolute top-[49px] right-0 left-0"
+              "min-w-[303px] w-full",
+              "absolute top-[49px] right-0 left-0",
+              "bg-white"
             )}
           >
             <ul>
