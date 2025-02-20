@@ -19,7 +19,13 @@ export default function ChooseAccount() {
           <h2 className="ml-[16px] text-[18px] leading-[24px]">
             Choose your account
           </h2>
-          <span className="mr-[17px] content-[url(/signin-arrow-down.png)]"></span>
+          <span
+            className={classNames(
+              "mr-[17px]",
+              { "content-[url(/signin-arrow-down.png)]": !isOpen },
+              { "content-[url(/signin-arrow-up.png)]": isOpen }
+            )}
+          ></span>
           <div
             className={classNames(
               { hidden: !isOpen },
@@ -31,21 +37,15 @@ export default function ChooseAccount() {
             )}
           >
             <ul>
-              <li>
-                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
-                  <span>Credit Cards</span>
-                </a>
-              </li>
-              <li>
-                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
-                  <span>Toast Loans & Payments</span>
-                </a>
-              </li>
-              <li>
-                <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
-                  <span>Toast Savings</span>
-                </a>
-              </li>
+              {["Credit Cards", "Toast Loans & Payments", "Toast Savings"].map(
+                (name, index, _) => (
+                  <li key={index}>
+                    <a className="pt-0 px-[16px] pb-[8px] mt-[8px] text-[18px] leading-[24px] block">
+                      <span>{name}</span>
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </div>
