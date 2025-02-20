@@ -1,7 +1,13 @@
 import classNames from "classnames";
 import { useState } from "react";
 
-export default function DropdownItem({ item }: { item: string }) {
+export default function DropdownItem({
+  item,
+  isDark = false,
+}: {
+  item: string;
+  isDark?: boolean;
+}) {
   const [isActive, setIsActive] = useState(false);
   return (
     <li
@@ -13,7 +19,8 @@ export default function DropdownItem({ item }: { item: string }) {
     >
       <a
         className={classNames(
-          "text-toast-black",
+          { "text-toast-black": !isDark },
+          { "text-white": isDark },
           "block",
           "text-[18px] lg:text-[14px]",
           "font-medium",

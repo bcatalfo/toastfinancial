@@ -49,8 +49,14 @@ export default function Dropdown({
     >
       <a
         className={classNames(
-          { "text-[rgb(177,228,227)]": isDropdownOpen && !isSecondary },
-          { "text-[rgb(28,129,149)]": isDropdownOpen && isSecondary },
+          {
+            "text-[rgb(177,228,227)]":
+              (isDropdownOpen && !isSecondary) ||
+              (isDropdownOpen && isSecondary && isDark),
+          },
+          {
+            "text-[rgb(28,129,149)]": isDropdownOpen && !isDark && isSecondary,
+          },
           { "text-toast-black": !isDropdownOpen && !isDark && isSecondary },
           { "text-white": !isDropdownOpen && isDark && isSecondary },
           {
@@ -80,14 +86,14 @@ export default function Dropdown({
           { hidden: !isDropdownOpen },
           { "left-[-16px]": isSecondary },
           { "bg-[#f4f5f5] lg:bg-white": !isDark },
-          { "bg-[#4e5f78]": isDark },
+          { "bg-[hsla(0,_0%,_100%,_0.15)]": isDark },
           "flex flex-col w-full",
           "lg:absolute lg:right-0 lg:top-[27.5px] lg:w-[197.7px] lg:bg-white lg:rounded-[8px] lg:p-[7px] lg:shadow-[0px_8px_20px_rgba(0,0,0,0.15)]",
           "z-1"
         )}
       >
         {items.map((item, index) => (
-          <DropdownItem key={index} item={item} />
+          <DropdownItem key={index} item={item} isDark={isDark} />
         ))}
       </ul>
     </li>
