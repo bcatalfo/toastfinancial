@@ -10,7 +10,7 @@ export default function ToastHero() {
               </b>
             </span>
           </h1>
-          <h1 className="font-bold text-[20px] lg:text-[24px]">
+          <h1 className="font-bold text-[20px] lg:text-[24px] leading-[28px] lg:leading[33.6px]">
             With a high-yield savings account
           </h1>
         </div>
