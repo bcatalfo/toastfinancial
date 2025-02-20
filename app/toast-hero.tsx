@@ -10,7 +10,9 @@ export default function ToastHero() {
               </b>
             </span>
           </h1>
-          <h1>With a high-yield savings account</h1>
+          <h1 className="font-bold text-[20px] lg:text-[24px]">
+            With a high-yield savings account
+          </h1>
         </div>
         <div>
           <ul>
