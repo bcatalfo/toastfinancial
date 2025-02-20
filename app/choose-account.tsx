@@ -22,7 +22,8 @@ export default function ChooseAccount() {
               { hidden: !isOpen },
               "min-w-[303px] w-full",
               "absolute top-[49px] right-0 left-0",
-              "bg-white"
+              "bg-white",
+              "rounded-b-3xl"
             )}
           >
             <ul>
