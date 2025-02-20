@@ -56,6 +56,7 @@ export default function ToastHero() {
               <h2 className="ml-[16px] text-[18px] leading-[24px]">
                 Choose your account
               </h2>
+              <span className="mr-[17px] content-[url(/signin-arrow-down.png)]"></span>
             </div>
           </div>
         </div>
