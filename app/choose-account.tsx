@@ -19,7 +19,13 @@ export default function ChooseAccount() {
           <h2 className="ml-[16px] text-[18px] leading-[24px]">
             Choose your account
           </h2>
-          <span className="mr-[17px] content-[url(/signin-arrow-down.png)]"></span>
+          <span
+            className={classNames(
+              "mr-[17px]",
+              { "content-[url(/signin-arrow-down.png)]": !isOpen },
+              { "content-[url(/signin-arrow-up.png)]": isOpen }
+            )}
+          ></span>
           <div
             className={classNames(
               { hidden: !isOpen },
