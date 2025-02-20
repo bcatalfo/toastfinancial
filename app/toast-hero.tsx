@@ -27,7 +27,7 @@ export default function ToastHero() {
         <div>
           <a
             className={classNames(
-              "text-[14px] mt-[16px] ml-0 mr-[12px]",
+              "text-[14px] mt-[16px] lg:mt-[8px] ml-0 lg:ml-[22px] mr-[12px] lg:mr-[10px]",
               "leading-[18px] font-normal text-[#1c8195]",
               "border-solid border-b-1 border-[#1c8195]"
             )}
