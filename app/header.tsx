@@ -12,7 +12,7 @@ export default function Header() {
       <header
         className={classNames(
           "bg-toast-black lg:bg-white w-full left-[50%] transform-[translate(-50%)] fixed lg:relative z-4 top-0 flex flex-col max-w-[1440px]",
-          { "bottom-0": isSecondaryOpen }
+          { "bottom-0 overflow-y-auto": isSecondaryOpen }
         )}
       >
         <PrimaryHeader
